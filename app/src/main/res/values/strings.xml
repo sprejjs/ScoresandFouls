@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scores and Fouls</string>
+    <string name="btn_restart">Restart</string>
+    <string name="btn_count_fault">Add a fault</string>
+    <string name="btn_count_score">Add a score</string>
+    <string name="txt_fouls">Fouls</string>
+    <string name="txt_score">Score</string>
+    <string name="txt_team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
+</resources>

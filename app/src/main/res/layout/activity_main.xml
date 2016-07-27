@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.spreys.scoresandfouls.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/redTeamBackground"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="16dp"
+                android:text="@string/txt_team_a_name"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/dividerColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:text="@string/txt_score"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_scores_team_a"
+                android:textSize="40sp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0"/>
+
+            <View
+                android:background="@color/dividerColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:text="@string/txt_fouls"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_faults_team_a"
+                android:textSize="40sp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0"/>
+
+            <View
+                android:background="@color/dividerColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btn_count_scores_team_a"
+                android:text="@string/btn_count_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_count_fault_team_a"
+                android:text="@string/btn_count_fault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/blueTeamBackground"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="16dp"
+                android:text="@string/team_b_name"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/dividerColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:text="@string/txt_score"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_scores_team_b"
+                android:textSize="40sp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0"/>
+
+            <View
+                android:background="@color/dividerColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:text="@string/txt_fouls"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_faults_team_b"
+                android:textSize="40sp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0"/>
+
+            <View
+                android:background="@color/dividerColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btn_count_scores_team_b"
+                android:text="@string/btn_count_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_count_fault_team_b"
+                android:text="@string/btn_count_fault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:text="@string/btn_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
